@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ceroA5000m30">0.25</string>
+    <string name="ceroA5000MI30">0.275</string>
+    <string name="cincomilA99999m30">0.3</string>
+    <string name="cincomilA99999MI30">0.323</string>
+    <string name="mas99999m30">0.35</string>
+    <string name="mas99999MI30">0.385</string>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lab01c2016</string>
+    <string name="et_correoElectronico">Correo Electronico</string>
+    <string name="et_CUIT">CUIT</string>
+    <string name="et_montoAInvertir">Monto a invertir</string>
+    <string name="et_rendimiento">Rendimiento</string>
+    <string name="et_cantidadDiasInversion">cantDiasInversion</string>
+    <string name="et_diasSeleccionados">dias seleccionados</string>
+</resources>
