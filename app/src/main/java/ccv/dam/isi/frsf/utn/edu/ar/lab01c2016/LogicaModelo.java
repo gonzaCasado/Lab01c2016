@@ -5,11 +5,11 @@ package ccv.dam.isi.frsf.utn.edu.ar.lab01c2016;
  */
 public class LogicaModelo {
 
-    public float calcularInteres(int dias, float monto){
-        String tasa = "@tasas/ceroA5000m30";
+    public static double calcularInteres(int dias, double monto, double tasa){
 
 
-        float tasa2 = Float.parseFloat(tasa);
+        return monto*(Math.pow((1+tasa),(dias/360.0))-1);
+
 
     }
 

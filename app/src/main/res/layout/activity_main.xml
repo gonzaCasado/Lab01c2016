@@ -13,11 +13,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ccv.dam.isi.frsf.utn.edu.ar.lab01c2016.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+        <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Calculadora Plazo Fijo"
+        android:textAlignment="center"
         android:id="@+id/textView" />
+
 
     <LinearLayout
         android:orientation="vertical"
@@ -35,52 +37,68 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/correoValor" />
+            android:id="@+id/correoValor"
+            android:inputType="textEmailAddress"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CUIT"
+            android:text="@string/et_CUIT"
             android:id="@+id/textView3" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/cuitValor" />
+            android:id="@+id/cuitValor"
+            android:inputType="number"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Importe"
+            android:text="@string/et_montoAInvertir"
             android:id="@+id/textView4" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/importeValor" />
+            android:id="@+id/importeValor"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="10sp"/>
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cantidad de Dias"
-            android:id="@+id/textView5" />
+            android:text="@string/et_diasSeleccionados"
+            android:id="@+id/textView5"
+            android:layout_marginBottom="10sp"/>
 
         <SeekBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/seekBar"
-            android:max="31" />
+            android:max="365"
+            android:progress="1"
+            android:layout_marginBottom="10sp"
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Monto"
+            android:text="1"
+            android:id="@+id/textoSeekBar"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/et_rendimiento"
             android:id="@+id/textView6" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="$5000"
+            android:textSize="20sp"
             android:id="@+id/montoCalculado"
             android:visibility="invisible" />
 
@@ -101,8 +119,11 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Plazo fijo realizado"
-            android:id="@+id/textView8"
-            android:visibility="invisible" />
+            android:id="@+id/mensajeExito"
+            android:textColor="@color/colorExito"
+            android:visibility="invisible"
+            />
+
 
     </LinearLayout>
 </RelativeLayout>
