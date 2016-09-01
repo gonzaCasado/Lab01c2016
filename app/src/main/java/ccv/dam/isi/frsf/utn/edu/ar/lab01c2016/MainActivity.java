@@ -55,10 +55,10 @@ public class MainActivity extends AppCompatActivity {
                         textoMonto.setVisibility(View.VISIBLE);
 
                         mensajeExito.setText("Plazo fijo realizado. Recibira " + textoMonto.getText().toString() + " al vencimiento.");
-                        mensajeExito.setTextColor(Color.GREEN);
+                        mensajeExito.setTextColor(getResources().getColor(R.color.colorExito));
                     } else {
                         mensajeExito.setText("Ingrese un monto mayor a $0");
-                        mensajeExito.setTextColor(Color.RED);
+                        mensajeExito.setTextColor(getResources().getColor(R.color.colorError));
                     }
                 }
             }
